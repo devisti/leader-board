@@ -6,6 +6,7 @@ function WinnerCard(props) {
         <div className='winner-cards-container'>
             <div className='winner-card-2 winner-cards'>
                 <h3>🥈2nd</h3>
+                <div className="score-board-2">Score :&nbsp;<p>{props.second_winner_score}</p></div>
                 <div className="image-container">
                     <img src={props.second_winner} alt="Second winner image" />
                 </div>
@@ -13,6 +14,9 @@ function WinnerCard(props) {
             </div>
             <div className='winner-card-1 winner-cards'>
                 <h3>🏆 1st</h3>
+                <div className="score-board-1">Score :&nbsp;<p>{props.first_winner_score}</p></div>
+
+
                 <div className="image-container">
                     <img src={props.first_winner} alt="First winner image" />
                 </div>
@@ -20,6 +24,7 @@ function WinnerCard(props) {
             </div>
             <div className='winner-card-3 winner-cards'>
                 <h3>🥉 3rd</h3>
+                <div className="score-board-3">Score :&nbsp;<p>{props.third_winner_score}</p></div>
                 <div className="image-container">
                     <img src={props.third_winner} alt="Third winner image" />
                 </div>
